@@ -1,0 +1,46 @@
+body {
+  background: #fafafa;
+}
+
+.dino {
+  width: 60px;
+  height: 60px;
+  background-image: url(character.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.obstacle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(candle.png);
+}
+
+.game-over {
+  text-align: center;
+  color: #76009a;
+  margin-top: 50px;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 70000%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.027), rgba(0, 0, 0, 0.381)),
+  url(background.png);
+  background-repeat: repeat-x;
+  animation: slideright 2600s infinite linear;
+  width: 100%;
+  height: 100%;
+}
